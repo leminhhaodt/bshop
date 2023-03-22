@@ -1,0 +1,243 @@
+:root {
+    --bodyBack: #f7f6f9;
+    --textColor: #1b2741;
+    --starColor: #768134;
+    --sectionBack: #ffffff;
+}
+
+
+/* * {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: 'SF Pro Display';
+} */
+
+@font-face {
+    font-family: 'SF Pro Display';
+    src: url(../fonts/SFPro/SF-Pro-Display-Regular.otf);
+}
+
+body {
+    background-color: var(--bodyBack);
+    min-height: 100vh;
+    display: grid;
+    place-content: center;
+}
+
+.container {
+    width: 80vw;
+    height: 97vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+}
+
+.products {
+    width: 100%;
+    align-self: center;
+    height: 70%;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 40px;
+}
+
+.product {
+    position: relative;
+    background-color: var(--sectionBack);
+    width: 350px;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    padding: 5px 5px 5px 5px;
+    transition: .3s;
+    /* line-height: 23px; */
+}
+
+.image {
+    width: 100%;
+    height: 60%;
+    display: grid;
+    place-content: center;
+}
+
+.image img {
+    width: 312px;
+}
+
+.nameProduct {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    margin-top: 11px;
+    /* margin-bottom: 8px; */
+}
+
+.nameProduct h3 {
+    font-size: 14px;
+    text-transform: capitalize;
+    color: var(--textColor);
+    line-height: 16.71px;
+    font-family: 'SF Pro Display';
+    font-style: normal;
+    font-weight: 500;
+}
+
+.nameProduct span {
+    font-size: 1.5em;
+    color: var(--starColor);
+}
+
+.product p {
+    font-size: 14px;
+    line-height: 23px;
+    font-weight: 400;
+    margin-bottom: 0;
+}
+
+.stars svg {
+    font-size: 1.3em;
+    color: var(--starColor);
+}
+
+.stars {
+    display: flex;
+}
+
+#freeship {
+    background-color: #07234e;
+    padding: 7px;
+    border-radius: 10px;
+    color: #FFFFFF;
+    font-size: 10px;
+    font-family: 'SF Pro Display';
+    font-style: normal;
+    font-weight: 500;
+    line-height: 12px;
+}
+
+#best {
+    font-size: 10px;
+    background-color: #bb2200;
+    padding: 7px;
+    border-radius: 10px;
+    color: #FFFFFF;
+    font-family: 'SF Pro Display';
+    font-style: normal;
+    font-weight: 500;
+    line-height: 12px;
+}
+
+.price-box {
+    display: flex;
+    justify-content: space-between;
+}
+
+.price-box .circle {
+    border-radius: 50%;
+    width: 30px;
+    height: 30px;
+    background: #BBD66A;
+    font-style: normal;
+    font-weight: 800;
+    font-size: 10px;
+    text-align: center;
+    align-items: center;
+    color: #FFFFFF;
+    display: flex;
+}
+
+.price-box-left {
+    display: flex;
+}
+
+.price-main {
+    color: #6B1D14;
+    font-weight: 600 !important;
+    font-size: 16px !important;
+    font-style: normal;
+    line-height: 19px !important;
+    font-family: 'SF Pro Display';
+    margin-bottom: 0px;
+}
+
+del {
+    font-style: normal;
+    font-weight: 400;
+    font-size: 14px;
+    text-align: right;
+    color: #848484;
+    padding-left: 7px;
+    line-height: 17px;
+}
+
+.stars {
+    display: flex;
+    justify-content: space-between;
+}
+
+.stars-left {
+    display: flex;
+}
+
+.stars-right {
+    padding-right: 5px;
+}
+
+.stars-right img {
+    vertical-align: unset;
+}
+
+.stars .stars-left p {
+    font-family: 'SF Pro Display';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 10px;
+    line-height: 12px;
+    margin-bottom: 0px;
+}
+
+.progress {
+    position: relative;
+    height: 16px;
+    background: #F5C5A5;
+    border-radius: 5px;
+}
+
+.progress>.progress-type {
+    position: absolute;
+    left: 0px;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 8px;
+    line-height: 10px;
+    padding: 3px 30px 2px 10px;
+    color: #ffffff;
+    background: #F06A26;
+    height: 16px;
+    border-radius: 5px;
+}
+
+.progress>.progress-completed {
+    position: absolute;
+    right: 0px;
+    padding: 3px 10px 2px;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 8px;
+    line-height: 10px;
+    padding: 3px 8px 2px 10px !important;
+    color: #ffffff;
+    border-radius: 5px;
+}
+
+.sale_desc {
+    color: #F06A26;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 12px;
+    line-height: 14px;
+    border: 1px dashed #F06A26;
+}
